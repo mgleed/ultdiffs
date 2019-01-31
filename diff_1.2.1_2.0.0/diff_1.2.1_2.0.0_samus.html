@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- This file was created with the aha Ansi HTML Adapter. https://github.com/theZiz/aha -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="application/xml+xhtml; charset=UTF-8" />
+<title>stdin</title>
+</head>
+<body>
+<pre>
+<span style="font-weight:bold;">diff --git a/output_1.2.1/samus_1.2.1_parsed.txt b/output_2.0.0/samus_2.0.0_parsed.txt</span>
+<span style="font-weight:bold;">index 84090b4..0ba0753 100755</span>
+<span style="font-weight:bold;">--- a/output_1.2.1/samus_1.2.1_parsed.txt</span>
+<span style="font-weight:bold;">+++ b/output_2.0.0/samus_2.0.0_parsed.txt</span>
+<span style="color:teal;">@@ -321,12 +321,12 @@</span> game_catch:
+	; frame(1) 
+	frame(11)
+	frame(15)
+		catch(0, ?, 4.0, 0.0, 0.0, 0.0, <span style="color:red;">65,</span><span style="color:green;">?,</span> ?)
+		catch(1, ?, 3.0, 0.0, 7.5, 13.0, 0.0, 7.5, 5.0, <span style="color:red;">65,</span><span style="color:green;">?,</span> ?)
+	frame(18)
+		<span style="color:red;">grab(10001,</span><span style="color:green;">grab(?,</span> 1)
+	frame(23)
+		<span style="color:red;">grab(10002)</span><span style="color:green;">grab(?)</span>
+	; FAF(60)
+game_catchattack:
+	; motion_list.bin: {FAF=7}
+<span style="color:teal;">@@ -341,24 +341,24 @@</span> game_catchdash:
+	; frame(1) 
+	frame(16)
+	frame(17)
+		catch(0, ?, 4.0, 0.0, 0.0, 0.0, <span style="color:red;">65,</span><span style="color:green;">?,</span> ?)
+		catch(1, ?, 3.0, 0.0, 7.5, 13.0, 0.0, 7.5, 5.0, <span style="color:red;">65,</span><span style="color:green;">?,</span> ?)
+	frame(20)
+		<span style="color:red;">grab(10001,</span><span style="color:green;">grab(?,</span> 1)
+	frame(25)
+		<span style="color:red;">grab(10002)</span><span style="color:green;">grab(?)</span>
+	; FAF(68)
+game_catchturn:
+	; motion_list.bin: {FAF=63}
+	; frame(1) 
+	frame(17)
+	frame(18)
+		catch(0, ?, 3.0, 0.0, 0.0, 0.0, <span style="color:red;">65,</span><span style="color:green;">?,</span> ?)
+		catch(1, ?, 3.0, 0.0, 7.5, -18.0, 0.0, 7.5, -5.0, <span style="color:red;">65,</span><span style="color:green;">?,</span> ?)
+	frame(21)
+		<span style="color:red;">grab(10001,</span><span style="color:green;">grab(?,</span> 1)
+	frame(26)
+		<span style="color:red;">grab(10002)</span><span style="color:green;">grab(?)</span>
+	; FAF(63)
+game_cliffattack:
+	; motion_list.bin: {intangibleFirst=1, intangibleLast=28, FAF=56}
+<span style="color:teal;">@@ -405,17 +405,17 @@</span> game_clubswing4:
+	frame(16)
+	frame(25)
+	frame(26)
+		<span style="color:red;">shoot_item_bullet_charge(285212679,</span><span style="color:green;">shoot_item_bullet_charge(?,</span> ?)
+	; FAF(52)
+game_clubswingdash:
+	; motion_list.bin: {FAF=45}
+	; frame(1) 
+		<span style="color:red;">damage(0, 1,</span><span style="color:green;">damage(?, ?,</span> 0)
+	frame(5)
+	frame(7)
+	frame(10)
+	frame(14)
+		<span style="color:red;">damage(0, 0,</span><span style="color:green;">damage(?, ?,</span> 0)
+	; FAF(45)
+game_dash:
+	; motion_list.bin: {FAF=20}
+<span style="color:teal;">@@ -483,7 +483,7 @@</span> game_escapeairslide:
+	; frame(1) 
+	frame(14)
+	frame(24)
+		notify_event_msc_cmd(?, <span style="color:red;">2)</span><span style="color:green;">?)</span>
+
+game_escapeb:
+	; motion_list.bin: N/A
+<span style="color:teal;">@@ -515,7 +515,7 @@</span> game_fflowershoot,game_fflowershootair,game_fflowershootaerial:
+game_final,game_finalair:
+	; motion_list.bin: N/A
+	; frame(1) 
+		<span style="color:red;">is_exist_article(4)</span><span style="color:green;">is_exist_article(?)</span>
+		attack(ID=0, ?=0, ?=?, damage=1.0, angle=20, kbg=100, wkb=22, bkb=0, size=13.0, X=0.0, Y=15.0, Z=20.0, hitlag=0.0, sdi?=1.0, , , , , , , , , , , , , , , , , , , )
+	frame(8)
+		attack(ID=0, ?=0, ?=?, damage=2.0, angle=20, kbg=100, wkb=22, bkb=0, size=15.0, X=0.0, Y=15.0, Z=20.0, hitlag=0.0, sdi?=1.0, , , , , , , , , , , , , , , , , , , )
+<span style="color:teal;">@@ -598,27 +598,27 @@</span> game_guardoff:
+	; motion_list.bin: {FAF=8}
+	; frame(1) 
+	frame(2)
+		hit_node(?, <span style="color:red;">2)</span><span style="color:green;">?)</span>
+		hit_node(?, <span style="color:red;">2)</span><span style="color:green;">?)</span>
+		hit_node(?, <span style="color:red;">2)</span><span style="color:green;">?)</span>
+		hit_node(?, <span style="color:red;">2)</span><span style="color:green;">?)</span>
+	frame(4)
+		hit_node(?, <span style="color:red;">0)</span><span style="color:green;">?)</span>
+		hit_node(?, <span style="color:red;">0)</span><span style="color:green;">?)</span>
+		hit_node(?, <span style="color:red;">0)</span><span style="color:green;">?)</span>
+		hit_node(?, <span style="color:red;">0)</span><span style="color:green;">?)</span>
+	; FAF(8)
+game_guardon:
+	; motion_list.bin: {FAF=8}
+	; frame(1) 
+	frame(1)
+		hit_node(?, <span style="color:red;">2)</span><span style="color:green;">?)</span>
+		hit_node(?, <span style="color:red;">2)</span><span style="color:green;">?)</span>
+		hit_node(?, <span style="color:red;">2)</span><span style="color:green;">?)</span>
+	frame(6)
+		hit_node(?, <span style="color:red;">0)</span><span style="color:green;">?)</span>
+		hit_node(?, <span style="color:red;">0)</span><span style="color:green;">?)</span>
+		hit_node(?, <span style="color:red;">0)</span><span style="color:green;">?)</span>
+	; FAF(8)
+game_hburst:
+	; motion_list.bin: function not found
+<span style="color:teal;">@@ -650,26 +650,26 @@</span> game_itemheavythrowb,game_itemheavythrowb4:
+	; motion_list.bin: {FAF=40}
+	; frame(1) 
+	frame(22)
+		throw_item_offset(-21, 14, <span style="color:red;">1, 0, 2)</span><span style="color:green;">?, ?, ?)</span>
+		reverse_lr(?)
+	; FAF(40)
+game_itemheavythrowf,game_itemheavythrowf4:
+	; motion_list.bin: {FAF=40}
+	; frame(1) 
+	frame(22)
+		throw_item_offset(21, 14, <span style="color:red;">1, 0, 2)</span><span style="color:green;">?, ?, ?)</span>
+	; FAF(40)
+game_itemheavythrowhi,game_itemheavythrowhi4:
+	; motion_list.bin: {FAF=30}
+	; frame(1) 
+	frame(14)
+		throw_item_offset(0, 31, <span style="color:red;">1, 0, 2)</span><span style="color:green;">?, ?, ?)</span>
+	; FAF(30)
+game_itemheavythrowlw,game_itemheavythrowlw4:
+	; motion_list.bin: {FAF=30}
+	; frame(1) 
+	frame(9)
+		throw_item_offset(0, 2, <span style="color:red;">1, 0, 2)</span><span style="color:green;">?, ?, ?)</span>
+	; FAF(30)
+game_itemlighteat:
+	; motion_list.bin: {FAF=9}
+<span style="color:teal;">@@ -688,25 +688,25 @@</span> game_itemlightthrowairb,game_itemlightthrowairb4:
+	frame(9)
+		reverse_lr(?)
+	frame(11)
+		throw_item_offset(18, 10, <span style="color:red;">1, 0, 2)</span><span style="color:green;">?, ?, ?)</span>
+	; FAF(25)
+game_itemlightthrowairf,game_itemlightthrowairf4:
+	; motion_list.bin: {FAF=25}
+	; frame(1) 
+	frame(8)
+		throw_item_offset(16, 10, <span style="color:red;">1, 0, 2)</span><span style="color:green;">?, ?, ?)</span>
+	; FAF(25)
+game_itemlightthrowairhi:
+	; motion_list.bin: {FAF=24}
+	; frame(1) 
+	frame(12)
+		throw_item_offset(1, 29, <span style="color:red;">1, 0, 2)</span><span style="color:green;">?, ?, ?)</span>
+	; FAF(24)
+game_itemlightthrowairlw:
+	; motion_list.bin: {FAF=20}
+	; frame(1) 
+	frame(7)
+		throw_item_offset(0, -1, <span style="color:red;">1, 0, 2)</span><span style="color:green;">?, ?, ?)</span>
+	; FAF(20)
+game_itemlightthrowb,game_itemlightthrowb4:
+	; motion_list.bin: {FAF=25}
+<span style="color:teal;">@@ -714,7 +714,7 @@</span> game_itemlightthrowb,game_itemlightthrowb4:
+	frame(9)
+		reverse_lr(?)
+	frame(11)
+		throw_item_offset(18, 10, <span style="color:red;">1, 0, 2)</span><span style="color:green;">?, ?, ?)</span>
+	; FAF(25)
+game_itemlightthrowdash:
+	; motion_list.bin: {FAF=32}
+<span style="color:teal;">@@ -722,31 +722,31 @@</span> game_itemlightthrowdash:
+	frame(1)
+		ft_motion_rate(0.92)
+	frame(5); realFrame(5)
+		throw_item_offset(17, 10, <span style="color:red;">1, 0, 2)</span><span style="color:green;">?, ?, ?)</span>
+	; FAF(32), realFAF(30)
+game_itemlightthrowdrop:
+	; motion_list.bin: {FAF=24}
+	; frame(1) 
+	frame(6)
+		throw_item_offset(-9, 10, <span style="color:red;">1, 0, 2)</span><span style="color:green;">?, ?, ?)</span>
+	; FAF(24)
+game_itemlightthrowf,game_itemlightthrowf4:
+	; motion_list.bin: {FAF=25}
+	; frame(1) 
+	frame(8)
+		throw_item_offset(16, 10, <span style="color:red;">1, 0, 2)</span><span style="color:green;">?, ?, ?)</span>
+	; FAF(25)
+game_itemlightthrowhi,game_itemlightthrowhi4:
+	; motion_list.bin: {FAF=24}
+	; frame(1) 
+	frame(12)
+		throw_item_offset(1, 30, <span style="color:red;">1, 0, 2)</span><span style="color:green;">?, ?, ?)</span>
+	; FAF(24)
+game_itemlightthrowlw,game_itemlightthrowlw4:
+	; motion_list.bin: {FAF=20}
+	; frame(1) 
+	frame(7)
+		throw_item_offset(0, 0.1, <span style="color:red;">1, 0, 2)</span><span style="color:green;">?, ?, ?)</span>
+	; FAF(20)
+game_itemlightwalkeat:
+	; motion_list.bin: {FAF=11}
+<span style="color:teal;">@@ -826,7 +826,7 @@</span> game_scopefire,game_scopeairfire,game_scopeairfireaerial,game_scopefireempty,gam
+	; motion_list.bin: {FAF=31}
+	; frame(1) 
+	frame(3)
+		<span style="color:red;">shoot_item_bullet_charge(285212694,</span><span style="color:green;">shoot_item_bullet_charge(?,</span> ?)
+	; FAF(31)
+game_scoperapid,game_scopeairrapid,game_scopeairrapidaerial,game_scoperapidempty,game_scopeairrapidempty:
+	; motion_list.bin: N/A
+<span style="color:teal;">@@ -838,10 +838,10 @@</span> game_screw,game_screwair:
+	; motion_list.bin: N/A
+	; frame(1) 
+	frame(1)
+		<span style="color:red;">attack(10016,</span><span style="color:green;">attack(?,</span> 0, ?, 0, -1, 5.2)
+		<span style="color:red;">attack(10016,</span><span style="color:green;">attack(?,</span> 1, ?, 0, -1, -5.2)
+		<span style="color:red;">attack(10016,</span><span style="color:green;">attack(?,</span> 2, ?, 0, 9, 5.2)
+		<span style="color:red;">attack(10016,</span><span style="color:green;">attack(?,</span> 3, ?, 0, 9, -5.2)
+	wait(2); until frame(1.0)
+	; frame(1.0)
+
+<span style="color:teal;">@@ -863,7 +863,7 @@</span> game_shoot:
+	; frame(1) 
+		attack(ID=0, ?=0, ?=?, damage=5.0, angle=361, kbg=42, wkb=0, bkb=14, size=1.9, X=0.0, Y=0.0, Z=0.0, hitlag=1.0, sdi?=1.0, , , , , , , , , , , , , , , , , , , )
+		attack(ID=1, ?=0, ?=?, damage=28.0, angle=40, kbg=50, wkb=0, bkb=46, size=8.0, X=0.0, Y=0.0, Z=0.0, hitlag=1.0, sdi?=1.0, , , , , , , , , , , , , , , , , , , )
+		<span style="color:red;">attack(10031,</span><span style="color:green;">attack(?,</span> 0, 1)
+
+game_slip:
+	; motion_list.bin: {intangibleFirst=1, intangibleLast=6, FAF=30}
+<span style="color:teal;">@@ -902,7 +902,7 @@</span> game_specialairhi:
+	; frame(1) 
+	frame(4)
+	frame(5)
+		notify_event_msc_cmd(?, <span style="color:red;">1)</span><span style="color:green;">?)</span>
+		attack(ID=0, ?=0, ?=?, damage=1.0, angle=93, kbg=100, wkb=115, bkb=0, size=3.2, X=0.0, Y=2.0, Z=5.0, hitlag=0.0, sdi?=2.0, , , , , , , , , , , , , , , , , , , , , , )
+		attack(ID=1, ?=0, ?=?, damage=1.0, angle=96, kbg=100, wkb=115, bkb=0, size=3.2, X=0.0, Y=2.0, Z=-5.0, hitlag=0.0, sdi?=2.0, , , , , , , , , , , , , , , , , , , , , , )
+		attack(ID=2, ?=0, ?=?, damage=1.0, angle=93, kbg=100, wkb=60, bkb=0, size=3.0, X=0.0, Y=9.0, Z=5.0, hitlag=0.0, sdi?=9.0, , , , , , , , , , , , , , , , , , , , , , )
+<span style="color:teal;">@@ -917,7 +917,7 @@</span> game_specialairhi:
+		attack(ID=0, ?=0, ?=?, damage=1.0, angle=70, kbg=240, wkb=0, bkb=50, size=10.0, X=0.0, Y=6.5, Z=0.0, hitlag=2.0, sdi?=1.0, , , , , , , , , , , , , , , , , , , )
+	wait(2); until frame(1.0)
+	; frame(1.0)
+		notify_event_msc_cmd(?, <span style="color:red;">2)</span><span style="color:green;">?)</span>
+
+game_specialairlw:
+	; motion_list.bin: {FAF=49}
+<span style="color:teal;">@@ -927,11 +927,13 @@</span> game_specialairlw:
+	frame(45)
+	; FAF(49)
+game_specialairs:
+	; motion_list.bin: <span style="color:red;">{FAF=62}</span><span style="color:green;">{FAF=60}</span>
+	; frame(1) 
+	frame(21)
+	frame(35)
+	<span style="color:green;">frame(58)</span>
+<span style="color:green;">		ft_motion_rate(2)</span>
+	; <span style="color:red;">FAF(62)</span><span style="color:green;">FAF(60), realFAF(60)</span>
+game_specialhi:
+	; motion_list.bin: {intangibleFirst=3, intangibleLast=7, FAF=0}
+	; frame(1) 
+<span style="color:teal;">@@ -942,7 +944,7 @@</span> game_specialhi:
+		attack(ID=3, ?=0, ?=?, damage=3.0, angle=105, kbg=100, wkb=200, bkb=0, size=3.2, X=0.0, Y=9.0, Z=-5.0, hitlag=0.0, sdi?=9.0, , , , , , , , , , , , , , , , , , , , , , )
+	wait(3); until frame(1.0)
+	; frame(1.0)
+		notify_event_msc_cmd(?, <span style="color:red;">1)</span><span style="color:green;">?)</span>
+		attack(ID=0, ?=0, ?=?, damage=1.0, angle=92, kbg=100, wkb=180, bkb=0, size=3.2, X=0.0, Y=2.0, Z=5.0, hitlag=0.0, sdi?=2.0, , , , , , , , , , , , , , , , , , , , , , )
+		attack(ID=1, ?=0, ?=?, damage=1.0, angle=98, kbg=100, wkb=180, bkb=0, size=3.2, X=0.0, Y=2.0, Z=-5.0, hitlag=0.0, sdi?=2.0, , , , , , , , , , , , , , , , , , , , , , )
+		attack(ID=2, ?=0, ?=?, damage=1.0, angle=92, kbg=100, wkb=80, bkb=0, size=3.0, X=0.0, Y=9.0, Z=5.0, hitlag=0.0, sdi?=9.0, , , , , , , , , , , , , , , , , , , , , , )
+<span style="color:teal;">@@ -961,10 +963,10 @@</span> game_specialhi:
+		attack(ID=0, ?=0, ?=?, damage=2.0, angle=70, kbg=190, wkb=0, bkb=56, size=10.0, X=0.0, Y=6.5, Z=0.0, hitlag=2.5, sdi?=1.0, , , , , , , , , , , , , , , , , , , )
+	wait(2); until frame(1.0)
+	; frame(1.0)
+		notify_event_msc_cmd(?, <span style="color:red;">2)</span><span style="color:green;">?)</span>
+
+game_speciallw:
+	; motion_list.bin: <span style="color:red;">{FAF=54}</span><span style="color:green;">{FAF=49}</span>
+	; frame(1) 
+	frame(4)
+	frame(10)
+<span style="color:teal;">@@ -972,7 +974,8 @@</span> game_speciallw:
+	frame(44)
+	frame(45)
+	frame(45)
+		<span style="color:green;">ft_motion_rate(0.6)</span>
+	; <span style="color:red;">FAF(54)</span><span style="color:green;">FAF(49), realFAF(48)</span>
+game_specialnfire,game_specialairnfire (duplicate 1):
+	; motion_list.bin: {FAF=32}
+	; frame(1) 
+<span style="color:teal;">@@ -1007,7 +1010,9 @@</span> game_specials:
+	; motion_list.bin: {FAF=58}
+	; frame(1) 
+	frame(21)
+	<span style="color:green;">frame(58)</span>
+<span style="color:green;">		ft_motion_rate(1)</span>
+	; <span style="color:red;">FAF(58)</span><span style="color:green;">FAF(58), realFAF(58)</span>
+game_squat:
+	; motion_list.bin: {FAF=7}
+	; frame(1) 
+<span style="color:teal;">@@ -1094,50 +1099,50 @@</span> game_swordswingdash:
+game_throwb:
+	; motion_list.bin: {FAF=50}
+	; frame(1) 
+		<span style="color:red;">attack_abs(ID=0,</span><span style="color:green;">attack_abs(ID=?,</span> ?=0, damage=10.0, angle=40, kbg=55, wkb=0, bkb=60, size=0.0, X=1.0, <span style="color:red;">Y=3,</span><span style="color:green;">Y=?,</span> Z=0.0, hitlag=1, , , , )
+		<span style="color:red;">attack_abs(ID=1,</span><span style="color:green;">attack_abs(ID=?,</span> ?=0, damage=3.0, angle=361, kbg=100, wkb=0, bkb=50, size=0.0, X=1.0, <span style="color:red;">Y=3,</span><span style="color:green;">Y=?,</span> Z=0.0, hitlag=1, , , , )
+	frame(11)
+		check_finish_camera(25, 15)
+		set_throw_finish_zoom_rate(1.2)
+		set_throw_finish_offset(10, 3, 0)
+	frame(12)
+		reverse_lr(?)
+		<span style="color:red;">atk_hit_abs(0,</span><span style="color:green;">atk_hit_abs(?, ?, ?, ?,</span> ?,<span style="color:red;">285212682,</span> ?,<span style="color:red;">285212683,</span> ?,<span style="color:red;">285212684,</span> ?)
+	; FAF(50)
+game_throwf:
+	; motion_list.bin: {FAF=42}
+	; frame(1) 
+		<span style="color:red;">attack_abs(ID=0,</span><span style="color:green;">attack_abs(ID=?,</span> ?=0, damage=10.0, angle=42, kbg=55, wkb=0, bkb=60, size=0.0, X=1.0, <span style="color:red;">Y=3,</span><span style="color:green;">Y=?,</span> Z=0.0, hitlag=1, , , , )
+		<span style="color:red;">attack_abs(ID=1,</span><span style="color:green;">attack_abs(ID=?,</span> ?=0, damage=3.0, angle=361, kbg=100, wkb=0, bkb=50, size=0.0, X=1.0, <span style="color:red;">Y=3,</span><span style="color:green;">Y=?,</span> Z=0.0, hitlag=1, , , , )
+	frame(15)
+		check_finish_camera(16, 16)
+		set_throw_finish_zoom_rate(1.2)
+		set_throw_finish_offset(5, 5, 0)
+	frame(16)
+		<span style="color:red;">atk_hit_abs(0,</span><span style="color:green;">atk_hit_abs(?, ?, ?, ?,</span> ?,<span style="color:red;">285212682,</span> ?,<span style="color:red;">285212683,</span> ?,<span style="color:red;">285212684,</span> ?)
+	; FAF(42)
+game_throwhi:
+	; motion_list.bin: {FAF=42}
+	; frame(1) 
+		<span style="color:red;">attack_abs(ID=0,</span><span style="color:green;">attack_abs(ID=?,</span> ?=0, damage=7.0, angle=90, kbg=72, wkb=0, bkb=80, size=0.0, X=1.0, <span style="color:red;">Y=3,</span><span style="color:green;">Y=?,</span> Z=0.0, hitlag=1, , , , )
+		<span style="color:red;">attack_abs(ID=1,</span><span style="color:green;">attack_abs(ID=?,</span> ?=0, damage=3.0, angle=361, kbg=100, wkb=0, bkb=40, size=0.0, X=1.0, <span style="color:red;">Y=3,</span><span style="color:green;">Y=?,</span> Z=0.0, hitlag=1, , , , )
+	frame(15)
+		attack(ID=0, ?=0, ?=?, damage=5.0, angle=80, kbg=100, wkb=0, bkb=10, size=6.5, X=0.0, Y=23.0, Z=-1.0, hitlag=1.0, sdi?=1.0, , , , , , , , , , , , , , , , , , , )
+		check_finish_camera(1, 32)
+		set_throw_finish_zoom_rate(1.2)
+		set_throw_finish_offset(0, 5, 0)
+	frame(16)
+		<span style="color:red;">atk_hit_abs(0,</span><span style="color:green;">atk_hit_abs(?, ?, ?, ?,</span> ?,<span style="color:red;">285212682,</span> ?,<span style="color:red;">285212683,</span> ?,<span style="color:red;">285212684,</span> ?)
+	; FAF(42)
+game_throwlw:
+	; motion_list.bin: {FAF=40}
+	; frame(1) 
+		<span style="color:red;">attack_abs(ID=0,</span><span style="color:green;">attack_abs(ID=?,</span> ?=0, damage=8.0, angle=74, kbg=75, wkb=0, bkb=60, size=0.0, X=1.0, <span style="color:red;">Y=3,</span><span style="color:green;">Y=?,</span> Z=0.0, hitlag=1, , , , )
+		<span style="color:red;">attack_abs(ID=1,</span><span style="color:green;">attack_abs(ID=?,</span> ?=0, damage=3.0, angle=361, kbg=100, wkb=0, bkb=40, size=0.0, X=1.0, <span style="color:red;">Y=3,</span><span style="color:green;">Y=?,</span> Z=0.0, hitlag=1, , , , )
+	frame(20)
+		check_finish_camera(17, 0)
+	frame(21)
+		<span style="color:red;">atk_hit_abs(0,</span><span style="color:green;">atk_hit_abs(?, ?, ?, ?,</span> ?,<span style="color:red;">285212682,</span> ?,<span style="color:red;">285212683,</span> ?,<span style="color:red;">285212684,</span> ?)
+	frame(25)
+		ft_motion_rate(0.85)
+	; FAF(40), realFAF(38)
+</pre>
+</body>
+</html>

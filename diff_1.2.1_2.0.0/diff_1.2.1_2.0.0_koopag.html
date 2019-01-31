@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- This file was created with the aha Ansi HTML Adapter. https://github.com/theZiz/aha -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="application/xml+xhtml; charset=UTF-8" />
+<title>stdin</title>
+</head>
+<body>
+<pre>
+<span style="font-weight:bold;">diff --git a/output_1.2.1/koopag_1.2.1_parsed.txt b/output_2.0.0/koopag_2.0.0_parsed.txt</span>
+<span style="font-weight:bold;">index fbabfbd..dba4590 100755</span>
+<span style="font-weight:bold;">--- a/output_1.2.1/koopag_1.2.1_parsed.txt</span>
+<span style="font-weight:bold;">+++ b/output_2.0.0/koopag_2.0.0_parsed.txt</span>
+<span style="color:teal;">@@ -36,7 +36,7 @@</span> game_attackairb:
+	frame(1)
+		ft_motion_rate(1.7)
+	frame(10); realFrame(1)
+		<span style="color:red;">damage(0, 3,</span><span style="color:green;">damage(?, ?,</span> 12)
+	wait(10); until frame(1.0), realFrame(1)
+	; frame(1.0), realFrame(1)
+	frame(34); realFrame(1)
+<span style="color:teal;">@@ -66,7 +66,7 @@</span> game_attackairhi:
+	wait(5); until frame(1.0), realFrame(1)
+	; frame(1.0), realFrame(1)
+		ft_motion_rate(1.5)
+		<span style="color:red;">damage(0, 0,</span><span style="color:green;">damage(?, ?,</span> 0)
+	frame(40); realFrame(1)
+
+game_attackhi3:
+<span style="color:teal;">@@ -98,8 +98,8 @@</span> game_attackhi4:
+	frame(11); realFrame(1)
+		ft_motion_rate(1)
+	frame(15); realFrame(1)
+		hit_node(?, <span style="color:red;">1)</span><span style="color:green;">?)</span>
+		hit_node(?, <span style="color:red;">1)</span><span style="color:green;">?)</span>
+	frame(18); realFrame(1)
+	wait(2); until frame(1.0), realFrame(1)
+	; frame(1.0), realFrame(1)
+<span style="color:teal;">@@ -164,7 +164,7 @@</span> game_attacks4:
+	; motion_list.bin: N/A
+	; frame(1) 
+	frame(1)
+		<span style="color:red;">damage(0, 1,</span><span style="color:green;">damage(?, ?,</span> 0)
+		ft_motion_rate(1)
+	frame(8); realFrame(1)
+		ft_motion_rate(1.4)
+<span style="color:teal;">@@ -175,13 +175,13 @@</span> game_attacks4:
+	frame(44); realFrame(1)
+		ft_motion_rate(1)
+	frame(48); realFrame(1)
+		<span style="color:red;">damage(0, 0,</span><span style="color:green;">damage(?, ?,</span> 0)
+	frame(49); realFrame(1)
+		<span style="color:red;">damage(0, 0,</span><span style="color:green;">damage(?, ?,</span> 0)
+	frame(51); realFrame(1)
+		<span style="color:red;">damage(0, 0,</span><span style="color:green;">damage(?, ?,</span> 0)
+	frame(52); realFrame(1)
+		<span style="color:red;">damage(0, 0,</span><span style="color:green;">damage(?, ?,</span> 0)
+	wait(3); until frame(1.0), realFrame(1)
+	; frame(1.0), realFrame(1)
+	frame(108); realFrame(1)
+<span style="color:teal;">@@ -294,7 +294,7 @@</span> game_escapeairslide:
+	; motion_list.bin: {intangibleFirst=3, intangibleLast=30, FAF=0}
+	; frame(1) 
+	frame(24)
+		notify_event_msc_cmd(?, <span style="color:red;">2)</span><span style="color:green;">?)</span>
+
+game_escapef:
+	; motion_list.bin: {intangibleFirst=4, intangibleLast=34, FAF=34}
+<span style="color:teal;">@@ -313,7 +313,7 @@</span> game_escapen:
+game_finalend,game_finalairend:
+	; motion_list.bin: N/A
+	; frame(1) 
+		<span style="color:red;">whole_hit(2)</span><span style="color:green;">whole_hit(?)</span>
+		ft_motion_rate(0.5)
+	frame(40); realFrame(1)
+		ft_motion_rate(1)
+<span style="color:teal;">@@ -353,7 +353,7 @@</span> game_specialairhi:
+	frame(6)
+	frame(7)
+	frame(8)
+		notify_event_msc_cmd(?, <span style="color:red;">2)</span><span style="color:green;">?)</span>
+	wait(4); until frame(1.0)
+	; frame(1.0)
+	wait(4); until frame(1.0)
+<span style="color:teal;">@@ -427,10 +427,10 @@</span> game_specialsaircatch:
+	; motion_list.bin: N/A
+	; frame(1) 
+	frame(16)
+		catch(0, ?, 11.0, 0.0, 10.5, 48.0, 0.0, 19.0, 27.0, <span style="color:red;">196,</span><span style="color:green;">?,</span> ?)
+	wait(2); until frame(1.0)
+	; frame(1.0)
+		<span style="color:red;">grab(10002)</span><span style="color:green;">grab(?)</span>
+
+game_specialscatch:
+	; motion_list.bin: N/A
+<span style="color:teal;">@@ -446,10 +446,10 @@</span> game_specialscatch:
+	frame(29); realFrame(1)
+		ft_motion_rate(1)
+	frame(38); realFrame(1)
+		catch(0, ?, 10.0, 0.0, 10.5, 48.0, 0.0, 14.0, 26.0, <span style="color:red;">196,</span><span style="color:green;">?,</span> ?)
+	wait(1); until frame(1.0), realFrame(1)
+	; frame(1.0), realFrame(1)
+		<span style="color:red;">grab(10002)</span><span style="color:green;">grab(?)</span>
+	frame(55); realFrame(1)
+		ft_motion_rate(0.7)
+	frame(65); realFrame(1)
+</pre>
+</body>
+</html>
